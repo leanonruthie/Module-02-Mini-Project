@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(36, 36, 36);
+}
+
+header h1 {
+    text-align: center;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 24px;
+    color:  rgb(232, 102, 236);
+}
+
+header p {
+    font-family: sans-serif;
+    font-size: 12px;
+    color:  white;
+    text-align: center;
+}
+
+p, footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color:  rgb(232, 102, 236);
+}
+
+.code {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: flex;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    flex-basis: 25%;
+    height: 100%;
+}
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    border: 2px dotted white;
+    padding: 15px;
+    margin: 15px;
+}
+
+.code-card .card-header {
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    font-family: sans-serif;
+    color:  rgba(232, 102, 236);
+    background-color: rgb(36, 36, 36);;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 0px 8px
+    rgba(232, 102, 236, 1) 0 0 15px
+    rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 992px) {
+    .code-card {
+      width: 33%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .code-card {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .code-card {
+      width: 33%;
+    }
+  }
